@@ -236,37 +236,7 @@ Implements two algorithms using Spark MLlib:
 
 ---
 
-## 🔧 Configuration
 
-Edit `config/settings.py` to customize:
-
-```python
-# Spark Configuration
-SPARK_MASTER = "local[*]"           # Use all cores
-SPARK_DRIVER_MEMORY = "4g"          # Driver memory
-SPARK_EXECUTOR_MEMORY = "4g"        # Executor memory
-
-# Model Parameters
-TRAIN_TEST_RATIO = 0.8              # 80% training, 20% testing
-RANDOM_SEED = 42                    # Reproducibility
-
-# Linear Regression
-LR_ELASTIC_NET_PARAM = 0.1
-LR_REG_PARAM = 0.1
-LR_MAX_ITER = 100
-
-# Random Forest
-RF_NUM_TREES = 10
-RF_MAX_DEPTH = 5
-
-# Technical Indicators
-MOVING_AVERAGE_WINDOWS = [5, 10, 20, 50]
-RSI_PERIOD = 14
-MACD_FAST_PERIOD = 12
-MACD_SLOW_PERIOD = 26
-```
-
----
 
 ## 📊 Sample Dataset
 
